@@ -284,8 +284,13 @@
 
     .logo-item:hover { opacity: 1; }
 
-    .logo-item.logo-google { font-size: 1.3rem; letter-spacing: 0; }
-    .logo-item.logo-promed { font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.08em; }
+    .logo-item img { height: 36px; width: auto; object-fit: contain; filter: grayscale(30%); transition: filter 0.3s; }
+    .logo-item:hover img { filter: grayscale(0); }
+    .logo-item.logo-google img { height: 32px; }
+    .logo-item.logo-promed img, .logo-item.logo-promed svg { height: 40px; width: auto; }
+    .logo-item.logo-villabella img { height: 34px; }
+    .logo-item.logo-steuerclara img { height: 36px; }
+    .logo-item.logo-fp { font-size: 0.95rem; font-weight: 700; letter-spacing: 0.02em; color: #1e293b; }
 
     @media (max-width: 768px) {
       .logos-row { gap: 24px 32px; }
@@ -969,11 +974,11 @@
     <div class="container">
       <p class="logos-label">Unsere Unternehmensgruppe &amp; Partner</p>
       <div class="logos-row">
-        <span class="logo-item logo-google">Google</span>
-        <span class="logo-item logo-promed">ProMed Performance</span>
-        <span class="logo-item">Villa Bella</span>
-        <span class="logo-item">SteuerClara</span>
-        <span class="logo-item">Förderperspektive</span>
+        <span class="logo-item logo-google"><img src="assets/logo-google.png" alt="Google Partner"></span>
+        <span class="logo-item logo-promed"><img src="assets/logo-promed.svg" alt="ProMed Performance"></span>
+        <span class="logo-item logo-villabella"><img src="assets/logo-villabella.png" alt="Villa Bella"></span>
+        <span class="logo-item logo-steuerclara"><img src="assets/logo-steuerclara-final.png" alt="SteuerClara"></span>
+        <span class="logo-item logo-fp">Förderperspektive</span>
       </div>
     </div>
   </section>
