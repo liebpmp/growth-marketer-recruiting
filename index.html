@@ -310,6 +310,12 @@
       align-items: center;
     }
 
+    .about-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 16px;
+    }
     .about-image {
       width: 100%;
       aspect-ratio: 4/3;
@@ -326,7 +332,7 @@
     }
 
     .about-image::after {
-      content: '📸 Team-Foto';
+      content: none;
       font-size: 1rem;
     }
 
@@ -975,9 +981,9 @@
       <p class="logos-label">Unsere Unternehmensgruppe &amp; Partner</p>
       <div class="logos-row">
         <span class="logo-item logo-google"><img src="assets/logo-google.png" alt="Google Partner"></span>
-        <span class="logo-item logo-promed"><img src="assets/logo-promed.svg" alt="ProMed Performance"></span>
+        <span class="logo-item logo-promed"><img src="assets/logo-promed.png" alt="ProMed Performance"></span>
         <span class="logo-item logo-villabella"><img src="assets/logo-villabella.png" alt="Villa Bella"></span>
-        <span class="logo-item logo-steuerclara"><img src="assets/logo-steuerclara-final.png" alt="SteuerClara"></span>
+        <span class="logo-item logo-steuerclara"><img src="assets/logo-steuerclara.png" alt="SteuerClara"></span>
         <span class="logo-item logo-fp">Förderperspektive</span>
       </div>
     </div>
@@ -987,7 +993,7 @@
   <section class="about section" id="about">
     <div class="container">
       <div class="about-grid fade-in">
-        <div class="about-image"></div>
+        <div class="about-image"><img src="assets/team-photo.jpg" alt="Unser Team im Office auf Zypern"></div>
         <div class="about-content">
           <h2>Über uns — eine wachsende Unternehmensgruppe</h2>
           <p>Wir sind eine Operator-Holding mit Sitz auf Zypern, die eigene Companies gründet, skaliert und mit eigenen Systemen (Marketing, Sales, Product, Automation) zum Erfolg führt.</p>
