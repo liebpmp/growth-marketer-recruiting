@@ -1,0 +1,1543 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Growth Marketer gesucht — Schluss mit dem One-Man-Show Struggle</title>
+  <meta name="description" content="Du bist selbständiger Growth Marketer und machst alles alleine? Werde Teil unserer Unternehmensgruppe — nur Marketing, kein Vertrieb, überdurchschnittliche Vergütung.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    /* ═══════════════════════════════════════
+       RESET & BASE
+       ═══════════════════════════════════════ */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --gold: #D4A843;
+      --gold-hover: #C49A38;
+      --gold-light: rgba(212, 168, 67, 0.08);
+      --gold-glow: rgba(212, 168, 67, 0.25);
+      --dark: #1a1a1a;
+      --text: #333;
+      --text-light: #666;
+      --bg: #ffffff;
+      --bg-alt: #f8f8f6;
+      --bg-dark: #111111;
+      --border: #e5e5e5;
+      --radius: 12px;
+      --radius-lg: 20px;
+      --shadow-sm: 0 1px 3px rgba(0,0,0,0.06);
+      --shadow-md: 0 4px 20px rgba(0,0,0,0.08);
+      --shadow-lg: 0 8px 40px rgba(0,0,0,0.12);
+      --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* ═══════════════════════════════════════
+       TYPOGRAPHY
+       ═══════════════════════════════════════ */
+    h1, h2, h3, h4 {
+      color: var(--dark);
+      line-height: 1.2;
+      font-weight: 800;
+    }
+
+    h1 { font-size: clamp(2rem, 5vw, 3.2rem); letter-spacing: -0.03em; }
+    h2 { font-size: clamp(1.6rem, 3.5vw, 2.4rem); letter-spacing: -0.02em; }
+    h3 { font-size: 1.15rem; font-weight: 700; }
+
+    p { font-size: 1.05rem; color: var(--text); }
+
+    .gold-text { color: var(--gold); }
+    .highlight {
+      background: linear-gradient(180deg, transparent 60%, var(--gold-light) 60%);
+      padding: 0 4px;
+    }
+
+    /* ═══════════════════════════════════════
+       LAYOUT
+       ═══════════════════════════════════════ */
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .section {
+      padding: 80px 0;
+    }
+
+    @media (max-width: 768px) {
+      .section { padding: 56px 0; }
+    }
+
+    /* ═══════════════════════════════════════
+       HEADER / NAV BAR
+       ═══════════════════════════════════════ */
+    .topbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      background: rgba(255,255,255,0.92);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      padding: 14px 0;
+      transition: var(--transition);
+    }
+
+    .topbar-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .topbar-logo {
+      font-size: 1.1rem;
+      font-weight: 800;
+      color: var(--dark);
+      letter-spacing: -0.02em;
+    }
+
+    .topbar-logo span { color: var(--gold); }
+
+    .topbar-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--gold);
+      color: #fff;
+      font-size: 0.85rem;
+      font-weight: 600;
+      padding: 8px 18px;
+      border-radius: 50px;
+      text-decoration: none;
+      transition: var(--transition);
+    }
+
+    .topbar-cta:hover {
+      background: var(--gold-hover);
+      transform: translateY(-1px);
+    }
+
+    /* ═══════════════════════════════════════
+       HERO SECTION
+       ═══════════════════════════════════════ */
+    .hero {
+      padding: 140px 0 80px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -60%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 800px;
+      height: 800px;
+      background: radial-gradient(circle, var(--gold-glow) 0%, transparent 70%);
+      pointer-events: none;
+      opacity: 0.5;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--gold-light);
+      border: 1px solid rgba(212,168,67,0.2);
+      color: var(--gold-hover);
+      font-size: 0.85rem;
+      font-weight: 600;
+      padding: 8px 18px;
+      border-radius: 50px;
+      margin-bottom: 28px;
+    }
+
+    .hero-badge .dot {
+      width: 8px;
+      height: 8px;
+      background: var(--gold);
+      border-radius: 50%;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.5; transform: scale(1.3); }
+    }
+
+    .hero h1 {
+      max-width: 800px;
+      margin: 0 auto 20px;
+      position: relative;
+    }
+
+    .hero-subtitle {
+      max-width: 620px;
+      margin: 0 auto 40px;
+      font-size: 1.15rem;
+      color: var(--text-light);
+      line-height: 1.7;
+    }
+
+    .hero-cta-group {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--gold);
+      color: #fff;
+      font-size: 1.05rem;
+      font-weight: 700;
+      padding: 16px 36px;
+      border-radius: 50px;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      transition: var(--transition);
+      box-shadow: 0 4px 20px var(--gold-glow);
+    }
+
+    .btn-primary:hover {
+      background: var(--gold-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px var(--gold-glow);
+    }
+
+    .btn-primary svg {
+      transition: transform 0.3s ease;
+    }
+    .btn-primary:hover svg {
+      transform: translateX(3px);
+    }
+
+    .hero-note {
+      font-size: 0.85rem;
+      color: var(--text-light);
+    }
+
+    .hero-note strong { color: var(--dark); font-weight: 600; }
+
+    /* ═══════════════════════════════════════
+       SOCIAL PROOF — Logo Bar
+       ═══════════════════════════════════════ */
+    .logos-section {
+      padding: 48px 0;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .logos-label {
+      text-align: center;
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--text-light);
+      margin-bottom: 28px;
+    }
+
+    .logos-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .logo-item {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #999;
+      letter-spacing: 0.02em;
+      opacity: 0.6;
+      transition: opacity 0.3s;
+      white-space: nowrap;
+    }
+
+    .logo-item:hover { opacity: 1; }
+
+    .logo-item.logo-google { font-size: 1.3rem; letter-spacing: 0; }
+    .logo-item.logo-promed { font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.08em; }
+
+    @media (max-width: 768px) {
+      .logos-row { gap: 24px 32px; }
+    }
+
+    /* ═══════════════════════════════════════
+       ABOUT SECTION
+       ═══════════════════════════════════════ */
+    .about {
+      background: var(--bg-alt);
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .about-image {
+      width: 100%;
+      aspect-ratio: 4/3;
+      background: linear-gradient(135deg, #e8e4df 0%, #d5d0ca 100%);
+      border-radius: var(--radius-lg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #aaa;
+      font-size: 0.9rem;
+      font-weight: 600;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .about-image::after {
+      content: '📸 Team-Foto';
+      font-size: 1rem;
+    }
+
+    .about-content h2 {
+      margin-bottom: 20px;
+    }
+
+    .about-content p {
+      margin-bottom: 16px;
+      color: var(--text-light);
+    }
+
+    .about-stats {
+      display: flex;
+      gap: 32px;
+      margin-top: 28px;
+    }
+
+    .stat {
+      text-align: left;
+    }
+
+    .stat-number {
+      font-size: 1.8rem;
+      font-weight: 800;
+      color: var(--gold);
+      line-height: 1;
+    }
+
+    .stat-label {
+      font-size: 0.8rem;
+      color: var(--text-light);
+      margin-top: 4px;
+    }
+
+    @media (max-width: 768px) {
+      .about-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+      }
+      .about-stats { gap: 24px; }
+    }
+
+    /* ═══════════════════════════════════════
+       BENEFITS + REQUIREMENTS
+       ═══════════════════════════════════════ */
+    .comparison {
+      background: var(--bg);
+    }
+
+    .comparison-header {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 56px;
+    }
+
+    .comparison-header p {
+      color: var(--text-light);
+      margin-top: 12px;
+    }
+
+    .comparison-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+    }
+
+    .comparison-col {
+      padding: 36px;
+      border-radius: var(--radius-lg);
+    }
+
+    .comparison-col.benefits {
+      background: linear-gradient(135deg, rgba(212,168,67,0.05) 0%, rgba(212,168,67,0.02) 100%);
+      border: 1px solid rgba(212,168,67,0.15);
+    }
+
+    .comparison-col.requirements {
+      background: var(--bg-alt);
+      border: 1px solid var(--border);
+    }
+
+    .col-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 28px;
+      padding: 6px 14px;
+      border-radius: 50px;
+    }
+
+    .benefits .col-label {
+      background: rgba(212,168,67,0.12);
+      color: var(--gold-hover);
+    }
+
+    .requirements .col-label {
+      background: rgba(0,0,0,0.05);
+      color: var(--text-light);
+    }
+
+    .benefit-item, .req-item {
+      display: flex;
+      gap: 14px;
+      margin-bottom: 24px;
+      align-items: flex-start;
+    }
+
+    .benefit-item:last-child, .req-item:last-child { margin-bottom: 0; }
+
+    .benefit-icon, .req-icon {
+      flex-shrink: 0;
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+    }
+
+    .benefit-icon {
+      background: rgba(212,168,67,0.1);
+    }
+
+    .req-icon {
+      background: rgba(0,0,0,0.04);
+    }
+
+    .benefit-item h3, .req-item h3 {
+      font-size: 1rem;
+      margin-bottom: 3px;
+    }
+
+    .benefit-item p, .req-item p {
+      font-size: 0.9rem;
+      color: var(--text-light);
+      line-height: 1.5;
+    }
+
+    @media (max-width: 768px) {
+      .comparison-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
+      .comparison-col { padding: 28px; }
+    }
+
+    /* ═══════════════════════════════════════
+       CTA BAND (mid-page + bottom)
+       ═══════════════════════════════════════ */
+    .cta-band {
+      background: var(--bg-dark);
+      text-align: center;
+      padding: 64px 24px;
+    }
+
+    .cta-band h2 {
+      color: #fff;
+      margin-bottom: 12px;
+    }
+
+    .cta-band p {
+      color: rgba(255,255,255,0.6);
+      margin-bottom: 32px;
+      font-size: 1.05rem;
+    }
+
+    .cta-band .btn-primary {
+      font-size: 1.1rem;
+      padding: 18px 40px;
+    }
+
+    /* ═══════════════════════════════════════
+       FRAGEFLOW (Perspective-Style Quiz)
+       ═══════════════════════════════════════ */
+    .frageflow-section {
+      background: var(--bg-alt);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 80px 24px;
+    }
+
+    .frageflow-wrapper {
+      width: 100%;
+      max-width: 640px;
+      margin: 0 auto;
+    }
+
+    /* Progress Bar */
+    .ff-progress {
+      margin-bottom: 40px;
+    }
+
+    .ff-progress-bar {
+      height: 6px;
+      background: var(--border);
+      border-radius: 3px;
+      overflow: hidden;
+    }
+
+    .ff-progress-fill {
+      height: 100%;
+      background: var(--gold);
+      border-radius: 3px;
+      transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+      width: 0%;
+    }
+
+    .ff-progress-text {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px;
+      font-size: 0.8rem;
+      color: var(--text-light);
+    }
+
+    .ff-progress-text strong {
+      color: var(--dark);
+    }
+
+    /* Card */
+    .ff-card {
+      background: #fff;
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-lg);
+      padding: 48px 40px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .ff-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: var(--gold);
+    }
+
+    /* Steps */
+    .ff-step {
+      display: none;
+      animation: fadeInUp 0.4s ease-out;
+    }
+
+    .ff-step.active {
+      display: block;
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(16px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .ff-question {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--dark);
+      margin-bottom: 8px;
+      line-height: 1.3;
+    }
+
+    .ff-hint {
+      font-size: 0.9rem;
+      color: var(--text-light);
+      margin-bottom: 28px;
+    }
+
+    /* Options */
+    .ff-options {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .ff-option {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 16px 20px;
+      background: var(--bg-alt);
+      border: 2px solid transparent;
+      border-radius: var(--radius);
+      cursor: pointer;
+      transition: var(--transition);
+      font-size: 1rem;
+      color: var(--dark);
+      font-weight: 500;
+    }
+
+    .ff-option:hover {
+      border-color: var(--gold);
+      background: var(--gold-light);
+    }
+
+    .ff-option.selected {
+      border-color: var(--gold);
+      background: var(--gold-light);
+    }
+
+    .ff-option .radio {
+      flex-shrink: 0;
+      width: 22px;
+      height: 22px;
+      border: 2px solid #ccc;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: var(--transition);
+    }
+
+    .ff-option.selected .radio {
+      border-color: var(--gold);
+    }
+
+    .ff-option.selected .radio::after {
+      content: '';
+      width: 12px;
+      height: 12px;
+      background: var(--gold);
+      border-radius: 50%;
+    }
+
+    /* Checkbox variant for multi-select */
+    .ff-option .checkbox {
+      flex-shrink: 0;
+      width: 22px;
+      height: 22px;
+      border: 2px solid #ccc;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: var(--transition);
+    }
+
+    .ff-option.selected .checkbox {
+      border-color: var(--gold);
+      background: var(--gold);
+    }
+
+    .ff-option.selected .checkbox::after {
+      content: '✓';
+      color: #fff;
+      font-size: 0.8rem;
+      font-weight: 700;
+    }
+
+    /* Text area */
+    .ff-textarea {
+      width: 100%;
+      min-height: 120px;
+      padding: 16px;
+      border: 2px solid var(--border);
+      border-radius: var(--radius);
+      font-family: inherit;
+      font-size: 1rem;
+      color: var(--dark);
+      resize: vertical;
+      transition: border-color 0.3s;
+      background: var(--bg-alt);
+    }
+
+    .ff-textarea:focus {
+      outline: none;
+      border-color: var(--gold);
+    }
+
+    .ff-textarea::placeholder {
+      color: #aaa;
+    }
+
+    /* Contact form fields */
+    .ff-fields {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .ff-field {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .ff-field label {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--dark);
+    }
+
+    .ff-field label .optional {
+      font-weight: 400;
+      color: var(--text-light);
+    }
+
+    .ff-field input {
+      padding: 14px 16px;
+      border: 2px solid var(--border);
+      border-radius: var(--radius);
+      font-family: inherit;
+      font-size: 1rem;
+      color: var(--dark);
+      transition: border-color 0.3s;
+      background: var(--bg-alt);
+    }
+
+    .ff-field input:focus {
+      outline: none;
+      border-color: var(--gold);
+    }
+
+    .ff-field input::placeholder {
+      color: #aaa;
+    }
+
+    /* Navigation */
+    .ff-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 32px;
+      gap: 12px;
+    }
+
+    .ff-btn-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: transparent;
+      border: none;
+      color: var(--text-light);
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+      padding: 10px 0;
+      transition: color 0.3s;
+      font-family: inherit;
+    }
+
+    .ff-btn-back:hover { color: var(--dark); }
+    .ff-btn-back:disabled { opacity: 0; pointer-events: none; }
+
+    .ff-btn-next {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--gold);
+      color: #fff;
+      font-size: 1rem;
+      font-weight: 700;
+      padding: 14px 32px;
+      border-radius: 50px;
+      border: none;
+      cursor: pointer;
+      transition: var(--transition);
+      font-family: inherit;
+      margin-left: auto;
+    }
+
+    .ff-btn-next:hover {
+      background: var(--gold-hover);
+      transform: translateY(-1px);
+    }
+
+    .ff-btn-next:disabled {
+      opacity: 0.4;
+      cursor: not-allowed;
+      transform: none;
+    }
+
+    .ff-btn-next svg {
+      transition: transform 0.3s;
+    }
+
+    .ff-btn-next:hover:not(:disabled) svg {
+      transform: translateX(3px);
+    }
+
+    /* Success state */
+    .ff-success {
+      display: none;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .ff-success.active { display: block; }
+
+    .ff-success-icon {
+      width: 72px;
+      height: 72px;
+      background: var(--gold);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 24px;
+      font-size: 2rem;
+      animation: scaleIn 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+
+    @keyframes scaleIn {
+      from { transform: scale(0); }
+      to { transform: scale(1); }
+    }
+
+    .ff-success h2 {
+      margin-bottom: 12px;
+      font-size: 1.6rem;
+    }
+
+    .ff-success p {
+      color: var(--text-light);
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    @media (max-width: 768px) {
+      .ff-card { padding: 32px 24px; }
+      .ff-question { font-size: 1.15rem; }
+    }
+
+    /* ═══════════════════════════════════════
+       FOOTER
+       ═══════════════════════════════════════ */
+    .footer {
+      background: var(--bg-dark);
+      padding: 32px 0;
+      text-align: center;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 32px;
+      list-style: none;
+    }
+
+    .footer-links a {
+      color: rgba(255,255,255,0.4);
+      text-decoration: none;
+      font-size: 0.85rem;
+      transition: color 0.3s;
+    }
+
+    .footer-links a:hover { color: rgba(255,255,255,0.8); }
+
+    .footer-copy {
+      margin-top: 16px;
+      color: rgba(255,255,255,0.25);
+      font-size: 0.8rem;
+    }
+
+    /* ═══════════════════════════════════════
+       UTILITIES & ANIMATIONS
+       ═══════════════════════════════════════ */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Sticky mobile CTA */
+    .sticky-cta {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 90;
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border-top: 1px solid var(--border);
+      padding: 12px 24px;
+      text-align: center;
+      transform: translateY(100%);
+      transition: transform 0.4s ease;
+    }
+
+    .sticky-cta.visible {
+      transform: translateY(0);
+    }
+
+    .sticky-cta .btn-primary {
+      width: 100%;
+      justify-content: center;
+      font-size: 0.95rem;
+      padding: 14px 24px;
+    }
+
+    @media (max-width: 768px) {
+      .sticky-cta { display: block; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ═══════════════ TOPBAR ═══════════════ -->
+  <div class="topbar">
+    <div class="topbar-inner">
+      <div class="topbar-logo">PRO<span>MED</span> Group</div>
+      <a href="#bewerben" class="topbar-cta">
+        Jetzt bewerben
+        <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </div>
+
+  <!-- ═══════════════ HERO ═══════════════ -->
+  <section class="hero section">
+    <div class="container">
+      <div class="hero-badge">
+        <span class="dot"></span>
+        Zypern &amp; Remote — Wir stellen ein
+      </div>
+      <h1>Traumjob für Growth Marketer&nbsp;— <span class="gold-text">Schluss mit dem One‑Man‑Show&nbsp;Struggle</span></h1>
+      <p class="hero-subtitle">Du schaltest Ads, baust Funnels und skalierst Kampagnen — aber Vertrieb, Akquise und Buchhaltung killen deine Energie? Hör auf, alles alleine zu machen.</p>
+      <div class="hero-cta-group">
+        <a href="#bewerben" class="btn-primary">
+          Jetzt in 2 Minuten bewerben
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <p class="hero-note">⏱ <strong>Kein Anschreiben nötig</strong> — Express-Bewerbung in wenigen Klicks</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ LOGOS ═══════════════ -->
+  <section class="logos-section">
+    <div class="container">
+      <p class="logos-label">Unsere Unternehmensgruppe &amp; Partner</p>
+      <div class="logos-row">
+        <span class="logo-item logo-google">Google</span>
+        <span class="logo-item logo-promed">ProMed Performance</span>
+        <span class="logo-item">Villa Bella</span>
+        <span class="logo-item">SteuerClara</span>
+        <span class="logo-item">Förderperspektive</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ ABOUT ═══════════════ -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="about-grid fade-in">
+        <div class="about-image"></div>
+        <div class="about-content">
+          <h2>Über uns — eine wachsende Unternehmensgruppe</h2>
+          <p>Wir sind eine Operator-Holding mit Sitz auf Zypern, die eigene Companies gründet, skaliert und mit eigenen Systemen (Marketing, Sales, Product, Automation) zum Erfolg führt.</p>
+          <p>Von <strong>Healthcare-Marketing</strong> (plastische Chirurgie) über <strong>KI-SaaS</strong> (Voice Agents für Steuerkanzleien) bis <strong>Fördermittelberatung</strong> — bei uns arbeitest du nicht für einen Kunden, sondern gestaltest mehrere Brands gleichzeitig.</p>
+          <p>Unser Ziel: 2–3 neue Ventures pro Jahr. Dein Playground wächst ständig.</p>
+          <div class="about-stats">
+            <div class="stat">
+              <div class="stat-number">5+</div>
+              <div class="stat-label">Companies</div>
+            </div>
+            <div class="stat">
+              <div class="stat-number">100K+</div>
+              <div class="stat-label">Monats-Adspend</div>
+            </div>
+            <div class="stat">
+              <div class="stat-number">🇨🇾</div>
+              <div class="stat-label">Paphos, Zypern</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ BENEFITS + REQUIREMENTS ═══════════════ -->
+  <section class="comparison section" id="details">
+    <div class="container">
+      <div class="comparison-header fade-in">
+        <h2>Was du bekommst — und was du mitbringst</h2>
+        <p>Ein fairer Deal: Wir geben dir die Bühne, du bringst das Können.</p>
+      </div>
+      <div class="comparison-grid fade-in">
+        <!-- Benefits -->
+        <div class="comparison-col benefits">
+          <div class="col-label">✦ Das erwartet dich</div>
+
+          <div class="benefit-item">
+            <div class="benefit-icon">🚫</div>
+            <div>
+              <h3>Kein Vertrieb. Nie wieder.</h3>
+              <p>Du machst Marketing — wir kümmern uns um Kunden, Akquise und Struktur.</p>
+            </div>
+          </div>
+
+          <div class="benefit-item">
+            <div class="benefit-icon">💰</div>
+            <div>
+              <h3>Überdurchschnittliche Vergütung</h3>
+              <p>Leistungsgerechtes Gehalt, das dein Agentur-Einkommen übertrifft — ohne das Risiko.</p>
+            </div>
+          </div>
+
+          <div class="benefit-item">
+            <div class="benefit-icon">🌍</div>
+            <div>
+              <h3>Vollzeit Zypern oder Remote</h3>
+              <p>Arbeite aus unserem Office in Paphos oder remote aus dem DACH-Raum.</p>
+            </div>
+          </div>
+
+          <div class="benefit-item">
+            <div class="benefit-icon">🎯</div>
+            <div>
+              <h3>Mehrere Brands als Playground</h3>
+              <p>Nicht eine Nische — Healthcare, KI-SaaS, Fördermittel, Cannabis und mehr.</p>
+            </div>
+          </div>
+
+          <div class="benefit-item">
+            <div class="benefit-icon">🤝</div>
+            <div>
+              <h3>Flache Hierarchien &amp; echte Ownership</h3>
+              <p>Junges Team, direkte Wege, keine Politik. Du hast Impact.</p>
+            </div>
+          </div>
+
+          <div class="benefit-item">
+            <div class="benefit-icon">🔬</div>
+            <div>
+              <h3>Growth Experiments</h3>
+              <p>Budget, Freiheit und Vertrauen für neue Kanäle, Creatives und Strategien.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Requirements -->
+        <div class="comparison-col requirements">
+          <div class="col-label">◆ Das bringst du mit</div>
+
+          <div class="req-item">
+            <div class="req-icon">📊</div>
+            <div>
+              <h3>3+ Jahre Performance Marketing</h3>
+              <p>Du bist kein Junior — du hast echte Kampagnen-Erfahrung.</p>
+            </div>
+          </div>
+
+          <div class="req-item">
+            <div class="req-icon">📱</div>
+            <div>
+              <h3>Meta &amp; Google Ads Erfahrung</h3>
+              <p>Ads Manager und Google Ads sind dein tägliches Werkzeug.</p>
+            </div>
+          </div>
+
+          <div class="req-item">
+            <div class="req-icon">💎</div>
+            <div>
+              <h3>Hohe Adbudgets gemanagt</h3>
+              <p>50K, 100K, 200K Monatsbudget — du weißt wie man skaliert.</p>
+            </div>
+          </div>
+
+          <div class="req-item">
+            <div class="req-icon">🤖</div>
+            <div>
+              <h3>KI-Interesse</h3>
+              <p>Du nutzt KI-Tools aktiv oder willst es lernen — wir leben das.</p>
+            </div>
+          </div>
+
+          <div class="req-item">
+            <div class="req-icon">📈</div>
+            <div>
+              <h3>Wachstums-Mindset</h3>
+              <p>Lernbereitschaft, Neugier, der Wille besser zu werden.</p>
+            </div>
+          </div>
+
+          <div class="req-item">
+            <div class="req-icon">⚡</div>
+            <div>
+              <h3>Eigenständigkeit</h3>
+              <p>Du brauchst keinen Micromanager. Du siehst was zu tun ist und machst es.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ CTA BAND ═══════════════ -->
+  <section class="cta-band">
+    <div class="container">
+      <h2>Klingt wie der Exit aus dem Hamsterrad?</h2>
+      <p>Bewirb dich jetzt in 2 Minuten — ganz ohne Anschreiben.</p>
+      <a href="#bewerben" class="btn-primary">
+        Express-Bewerbung starten
+        <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- ═══════════════ FRAGEFLOW ═══════════════ -->
+  <section class="frageflow-section" id="bewerben">
+    <div class="frageflow-wrapper">
+      <!-- Progress -->
+      <div class="ff-progress">
+        <div class="ff-progress-bar">
+          <div class="ff-progress-fill" id="progressFill"></div>
+        </div>
+        <div class="ff-progress-text">
+          <span>Frage <strong id="currentStep">1</strong> von <strong>8</strong></span>
+          <span id="progressPercent">0%</span>
+        </div>
+      </div>
+
+      <!-- Card -->
+      <div class="ff-card">
+
+        <!-- Step 1 -->
+        <div class="ff-step active" data-step="1">
+          <p class="ff-question">Wie viel Erfahrung hast du im Performance Marketing?</p>
+          <p class="ff-hint">Wähle die passende Antwort — es gibt kein Richtig oder Falsch.</p>
+          <div class="ff-options" data-type="single" data-name="experience">
+            <div class="ff-option" data-value="< 1 Jahr"><span class="radio"></span>Weniger als 1 Jahr</div>
+            <div class="ff-option" data-value="1-3 Jahre"><span class="radio"></span>1–3 Jahre</div>
+            <div class="ff-option" data-value="3-5 Jahre"><span class="radio"></span>3–5 Jahre</div>
+            <div class="ff-option" data-value="5+ Jahre"><span class="radio"></span>5+ Jahre</div>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="ff-step" data-step="2">
+          <p class="ff-question">Welche Plattformen beherrschst du?</p>
+          <p class="ff-hint">Wähle alle Plattformen aus, mit denen du aktiv gearbeitet hast.</p>
+          <div class="ff-options" data-type="multi" data-name="platforms">
+            <div class="ff-option" data-value="Meta Ads"><span class="checkbox"></span>Meta Ads (Facebook / Instagram)</div>
+            <div class="ff-option" data-value="Google Ads"><span class="checkbox"></span>Google Ads</div>
+            <div class="ff-option" data-value="TikTok Ads"><span class="checkbox"></span>TikTok Ads</div>
+            <div class="ff-option" data-value="LinkedIn Ads"><span class="checkbox"></span>LinkedIn Ads</div>
+            <div class="ff-option" data-value="Andere"><span class="checkbox"></span>Andere</div>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="ff-step" data-step="3">
+          <p class="ff-question">Wie hoch war das größte Monatsbudget, das du gemanagt hast?</p>
+          <p class="ff-hint">Schätze ruhig — es geht um die Größenordnung.</p>
+          <div class="ff-options" data-type="single" data-name="budget">
+            <div class="ff-option" data-value="< 5K"><span class="radio"></span>Unter 5.000 €</div>
+            <div class="ff-option" data-value="5-20K"><span class="radio"></span>5.000 – 20.000 €</div>
+            <div class="ff-option" data-value="20-50K"><span class="radio"></span>20.000 – 50.000 €</div>
+            <div class="ff-option" data-value="50K+"><span class="radio"></span>50.000 – 100.000 €</div>
+            <div class="ff-option" data-value="100K+"><span class="radio"></span>Über 100.000 €</div>
+          </div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="ff-step" data-step="4">
+          <p class="ff-question">Bist du aktuell selbständig oder angestellt?</p>
+          <p class="ff-hint">Hilft uns, deine Situation besser zu verstehen.</p>
+          <div class="ff-options" data-type="single" data-name="status">
+            <div class="ff-option" data-value="Selbständig (One-Man-Show)"><span class="radio"></span>Selbständig (One-Man-Show)</div>
+            <div class="ff-option" data-value="Selbständig (mit Team)"><span class="radio"></span>Selbständig (mit Team)</div>
+            <div class="ff-option" data-value="Angestellt"><span class="radio"></span>Angestellt</div>
+            <div class="ff-option" data-value="Arbeitssuchend"><span class="radio"></span>Arbeitssuchend</div>
+          </div>
+        </div>
+
+        <!-- Step 5 -->
+        <div class="ff-step" data-step="5">
+          <p class="ff-question">Was nervt dich am meisten an deiner aktuellen Situation?</p>
+          <p class="ff-hint">Sei ehrlich — dein Feedback hilft uns, die Position besser zu gestalten.</p>
+          <textarea class="ff-textarea" data-name="painpoint" placeholder="z.B. Vertrieb frisst meine ganze Energie, unregelmäßiges Einkommen, keine Zeit für Weiterbildung ..."></textarea>
+        </div>
+
+        <!-- Step 6 -->
+        <div class="ff-step" data-step="6">
+          <p class="ff-question">Wo könntest du dir vorstellen zu arbeiten?</p>
+          <p class="ff-hint">Wir sind flexibel — aber gut zu wissen was du präferierst.</p>
+          <div class="ff-options" data-type="single" data-name="location">
+            <div class="ff-option" data-value="Vor Ort auf Zypern (Paphos)"><span class="radio"></span>Vor Ort auf Zypern (Paphos)</div>
+            <div class="ff-option" data-value="Remote aus DACH"><span class="radio"></span>Remote aus DACH</div>
+            <div class="ff-option" data-value="Hybrid"><span class="radio"></span>Hybrid</div>
+            <div class="ff-option" data-value="Flexibel"><span class="radio"></span>Flexibel — mir egal</div>
+          </div>
+        </div>
+
+        <!-- Step 7 -->
+        <div class="ff-step" data-step="7">
+          <p class="ff-question">Wie schnell könntest du starten?</p>
+          <p class="ff-hint">Keine Eile — wir wollen den richtigen Fit.</p>
+          <div class="ff-options" data-type="single" data-name="availability">
+            <div class="ff-option" data-value="Sofort"><span class="radio"></span>Sofort</div>
+            <div class="ff-option" data-value="In 2-4 Wochen"><span class="radio"></span>In 2–4 Wochen</div>
+            <div class="ff-option" data-value="In 1-3 Monaten"><span class="radio"></span>In 1–3 Monaten</div>
+            <div class="ff-option" data-value="Später"><span class="radio"></span>Später</div>
+          </div>
+        </div>
+
+        <!-- Step 8: Contact -->
+        <div class="ff-step" data-step="8">
+          <p class="ff-question">Fast geschafft — wie können wir dich erreichen?</p>
+          <p class="ff-hint">Wir melden uns innerhalb von 48 Stunden bei dir.</p>
+          <div class="ff-fields">
+            <div class="ff-field">
+              <label>Vor- und Nachname</label>
+              <input type="text" data-name="name" placeholder="Max Mustermann" required>
+            </div>
+            <div class="ff-field">
+              <label>E-Mail-Adresse</label>
+              <input type="email" data-name="email" placeholder="max@example.com" required>
+            </div>
+            <div class="ff-field">
+              <label>Telefonnummer</label>
+              <input type="tel" data-name="phone" placeholder="+49 170 1234567" required>
+            </div>
+            <div class="ff-field">
+              <label>LinkedIn oder Portfolio <span class="optional">(optional)</span></label>
+              <input type="url" data-name="linkedin" placeholder="https://linkedin.com/in/...">
+            </div>
+          </div>
+        </div>
+
+        <!-- Success -->
+        <div class="ff-success" id="ffSuccess">
+          <div class="ff-success-icon">🎉</div>
+          <h2>Bewerbung abgeschickt!</h2>
+          <p>Vielen Dank für dein Interesse. Wir schauen uns deine Angaben an und melden uns innerhalb von 48 Stunden bei dir.</p>
+        </div>
+
+        <!-- Navigation -->
+        <div class="ff-nav" id="ffNav">
+          <button class="ff-btn-back" id="btnBack" disabled>
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+            Zurück
+          </button>
+          <button class="ff-btn-next" id="btnNext" disabled>
+            <span id="btnNextLabel">Weiter</span>
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ FOOTER ═══════════════ -->
+  <footer class="footer">
+    <ul class="footer-links">
+      <li><a href="#">Impressum</a></li>
+      <li><a href="#">Datenschutz</a></li>
+      <li><a href="#">Cookie-Einstellungen</a></li>
+    </ul>
+    <p class="footer-copy">&copy; 2026 ProMed Performance Group. Alle Rechte vorbehalten.</p>
+  </footer>
+
+  <!-- ═══════════════ STICKY MOBILE CTA ═══════════════ -->
+  <div class="sticky-cta" id="stickyCta">
+    <a href="#bewerben" class="btn-primary">
+      Jetzt in 2 Min bewerben
+      <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
+  </div>
+
+  <!-- ═══════════════ JAVASCRIPT ═══════════════ -->
+  <script>
+    (function() {
+      'use strict';
+
+      // ─── Scroll animations ───
+      const fadeEls = document.querySelectorAll('.fade-in');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(e => {
+          if (e.isIntersecting) {
+            e.target.classList.add('visible');
+            observer.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.15 });
+      fadeEls.forEach(el => observer.observe(el));
+
+      // ─── Sticky mobile CTA ───
+      const sticky = document.getElementById('stickyCta');
+      const heroSection = document.querySelector('.hero');
+      const frageflowSection = document.getElementById('bewerben');
+      
+      if (sticky && window.innerWidth <= 768) {
+        window.addEventListener('scroll', () => {
+          const heroBottom = heroSection.getBoundingClientRect().bottom;
+          const ffTop = frageflowSection.getBoundingClientRect().top;
+          if (heroBottom < 0 && ffTop > window.innerHeight) {
+            sticky.classList.add('visible');
+          } else {
+            sticky.classList.remove('visible');
+          }
+        }, { passive: true });
+      }
+
+      // ─── FRAGEFLOW ENGINE ───
+      const TOTAL_STEPS = 8;
+      let currentStep = 1;
+      const answers = {};
+
+      const progressFill = document.getElementById('progressFill');
+      const currentStepEl = document.getElementById('currentStep');
+      const progressPercent = document.getElementById('progressPercent');
+      const btnBack = document.getElementById('btnBack');
+      const btnNext = document.getElementById('btnNext');
+      const btnNextLabel = document.getElementById('btnNextLabel');
+      const ffNav = document.getElementById('ffNav');
+      const ffSuccess = document.getElementById('ffSuccess');
+
+      function getStep(n) {
+        return document.querySelector(`.ff-step[data-step="${n}"]`);
+      }
+
+      function updateProgress() {
+        const pct = Math.round(((currentStep - 1) / TOTAL_STEPS) * 100);
+        progressFill.style.width = pct + '%';
+        currentStepEl.textContent = currentStep;
+        progressPercent.textContent = pct + '%';
+        btnBack.disabled = currentStep === 1;
+        btnNextLabel.textContent = currentStep === TOTAL_STEPS ? 'Absenden' : 'Weiter';
+      }
+
+      function validateStep(step) {
+        const stepEl = getStep(step);
+        if (!stepEl) return false;
+
+        // Single / multi choice
+        const options = stepEl.querySelector('.ff-options');
+        if (options) {
+          const selected = options.querySelectorAll('.ff-option.selected');
+          return selected.length > 0;
+        }
+
+        // Textarea
+        const textarea = stepEl.querySelector('.ff-textarea');
+        if (textarea) {
+          return textarea.value.trim().length > 0;
+        }
+
+        // Contact fields
+        const inputs = stepEl.querySelectorAll('input[required]');
+        if (inputs.length) {
+          let valid = true;
+          inputs.forEach(inp => {
+            if (!inp.value.trim()) valid = false;
+            if (inp.type === 'email' && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(inp.value)) valid = false;
+          });
+          return valid;
+        }
+
+        return true;
+      }
+
+      function collectStepData(step) {
+        const stepEl = getStep(step);
+        if (!stepEl) return;
+
+        const options = stepEl.querySelector('.ff-options');
+        if (options) {
+          const name = options.dataset.name;
+          const type = options.dataset.type;
+          const selected = options.querySelectorAll('.ff-option.selected');
+          if (type === 'multi') {
+            answers[name] = Array.from(selected).map(o => o.dataset.value);
+          } else {
+            answers[name] = selected[0]?.dataset.value || '';
+          }
+          return;
+        }
+
+        const textarea = stepEl.querySelector('.ff-textarea');
+        if (textarea) {
+          answers[textarea.dataset.name] = textarea.value.trim();
+          return;
+        }
+
+        const inputs = stepEl.querySelectorAll('input');
+        inputs.forEach(inp => {
+          answers[inp.dataset.name] = inp.value.trim();
+        });
+      }
+
+      function goToStep(step) {
+        const prev = getStep(currentStep);
+        if (prev) prev.classList.remove('active');
+        currentStep = step;
+        const next = getStep(currentStep);
+        if (next) {
+          next.classList.remove('active');
+          // Force reflow for animation
+          void next.offsetWidth;
+          next.classList.add('active');
+        }
+        updateProgress();
+        updateNextButton();
+      }
+
+      function updateNextButton() {
+        btnNext.disabled = !validateStep(currentStep);
+      }
+
+      // Option click handlers (event delegation)
+      document.querySelector('.ff-card').addEventListener('click', function(e) {
+        const option = e.target.closest('.ff-option');
+        if (!option) return;
+        
+        const optionsContainer = option.closest('.ff-options');
+        const type = optionsContainer.dataset.type;
+
+        if (type === 'single') {
+          optionsContainer.querySelectorAll('.ff-option').forEach(o => o.classList.remove('selected'));
+          option.classList.add('selected');
+        } else {
+          option.classList.toggle('selected');
+        }
+
+        updateNextButton();
+
+        // Auto-advance for single-select (after a small delay)
+        if (type === 'single') {
+          setTimeout(() => {
+            if (currentStep < TOTAL_STEPS) {
+              collectStepData(currentStep);
+              goToStep(currentStep + 1);
+            }
+          }, 300);
+        }
+      });
+
+      // Text input validation listeners
+      document.querySelector('.ff-card').addEventListener('input', function(e) {
+        if (e.target.matches('.ff-textarea') || e.target.matches('input')) {
+          updateNextButton();
+        }
+      });
+
+      // Next button
+      btnNext.addEventListener('click', function() {
+        if (!validateStep(currentStep)) return;
+        collectStepData(currentStep);
+
+        if (currentStep === TOTAL_STEPS) {
+          // Submit
+          submitForm();
+          return;
+        }
+
+        goToStep(currentStep + 1);
+      });
+
+      // Back button
+      btnBack.addEventListener('click', function() {
+        if (currentStep > 1) {
+          goToStep(currentStep - 1);
+        }
+      });
+
+      // Keyboard navigation
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Enter' && !btnNext.disabled && document.activeElement?.closest('.ff-card')) {
+          e.preventDefault();
+          btnNext.click();
+        }
+      });
+
+      function submitForm() {
+        collectStepData(currentStep);
+        
+        // Log to console (replace with actual endpoint)
+        console.log('📋 Bewerbung eingegangen:', answers);
+
+        // Show success
+        document.querySelectorAll('.ff-step').forEach(s => s.classList.remove('active'));
+        ffNav.style.display = 'none';
+        ffSuccess.classList.add('active');
+
+        const pct = 100;
+        progressFill.style.width = pct + '%';
+        progressPercent.textContent = '100%';
+        currentStepEl.textContent = '✓';
+      }
+
+      // Initial state
+      updateProgress();
+      updateNextButton();
+
+      // ─── Smooth scroll for anchor links ───
+      document.querySelectorAll('a[href^="#"]').forEach(link => {
+        link.addEventListener('click', function(e) {
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+            e.preventDefault();
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            // Hide sticky CTA when clicking to form
+            if (sticky) sticky.classList.remove('visible');
+          }
+        });
+      });
+
+    })();
+  </script>
+
+</body>
+</html>
